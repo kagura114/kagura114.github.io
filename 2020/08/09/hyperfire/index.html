@@ -5,13 +5,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>反向代理pixiv - Blog XD</title>
+    <title>2020明日方舟夏活 - Blog XD</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Fechin,"> 
-    <meta name="description" content="用Nginx本地反代pixiv, wikipedia,steam community0.PC用户？直接前往Step21.准备nginx 这里使用neoterm
-12sudo apt install ,"> 
+    <meta name="description" content="2020年明日方舟夏活炎上事件开始：一则公告
+一、「火蓝之心」复刻，活动关卡限时开启活动时间：08月11日16:00 - 8月25日03:59活动说明：活动期间将开放「火蓝之心」活动关卡，玩家可通过,"> 
     <meta name="author" content="mouxi"> 
     <link rel="alternative" href="atom.xml" title="Blog XD" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -39,7 +39,7 @@
     <div class="bar" style="width: 0;"></div>
     <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://yoursite.com"></a>
     <div title="播放/暂停" class="iconfont icon-play"></div>
-    <h3 class="subtitle">反向代理pixiv</h3>
+    <h3 class="subtitle">2020明日方舟夏活</h3>
     <div class="social">
         <div>
             <div class="share">
@@ -54,30 +54,52 @@
     <div class="section">
         <div class="article">
     <div class='main'>
-        <h1 class="title">反向代理pixiv</h1>
+        <h1 class="title">2020明日方舟夏活</h1>
         <div class="stuff">
-            <span>八月 03, 2020</span>
+            <span>八月 09, 2020</span>
             
-  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/pixiv/" rel="tag">pixiv</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/" rel="tag">网络工具</a></li></ul>
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E6%98%8E%E6%97%A5%E6%96%B9%E8%88%9F/" rel="tag">明日方舟</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E9%B9%B0%E8%A7%92/" rel="tag">鹰角</a></li></ul>
 
 
         </div>
         <div class="content markdown">
-            <h1 id="用Nginx本地反代pixiv-wikipedia-steam-community"><a href="#用Nginx本地反代pixiv-wikipedia-steam-community" class="headerlink" title="用Nginx本地反代pixiv, wikipedia,steam community"></a>用Nginx本地反代pixiv, wikipedia,steam community</h1><h2 id="0-PC用户？直接前往Step2"><a href="#0-PC用户？直接前往Step2" class="headerlink" title="0.PC用户？直接前往Step2"></a>0.PC用户？直接前往Step2</h2><h2 id="1-准备nginx"><a href="#1-准备nginx" class="headerlink" title="1.准备nginx"></a>1.准备nginx</h2><p> 这里使用<a target="_blank" rel="noopener" href="https://www.coolapk.com/apk/io.neoterm">neoterm</a></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install nginx</span><br><span class="line">sudo apt install git</span><br></pre></td></tr></table></figure>
-<h2 id="2-获取Nginx配置文件"><a href="#2-获取Nginx配置文件" class="headerlink" title="2.获取Nginx配置文件"></a>2.获取Nginx配置文件</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://gitee.com/mashirozx/Pixiv-Nginx.git</span><br></pre></td></tr></table></figure>
-<p>使用国内源较快<br>安装证书(ca.cer)，android9以上可能会有下图显示，不用管<br><img src="https://s2.ax1x.com/2020/02/03/1dRZlR.png" alt="就是这样"></p>
-<h2 id="3-为安卓系统进行改造"><a href="#3-为安卓系统进行改造" class="headerlink" title="3.为安卓系统进行改造"></a>3.为安卓系统进行改造</h2><p>安卓系统有奇怪的限制，必须要用su权限才能使用（不过改hosts也要su）<br>将nginx.conf前两行改为</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">user  root;</span><br><span class="line">worker_processes  2;</span><br></pre></td></tr></table></figure>
-<p>也可以从<a target="_blank" rel="noopener" href="https://github.com/kagura114/kagura114.github.io/blob/master/nginx.conf">github下载</a></p>
-<h2 id="4-改修hosts"><a href="#4-改修hosts" class="headerlink" title="4.改修hosts"></a>4.改修hosts</h2><p>原文件有一份复制到/etc<br>可自行修改</p>
-<h2 id="5-法律适用"><a href="#5-法律适用" class="headerlink" title="5.法律适用"></a>5.法律适用</h2><p>《国际联网暂行规定》第六条规定：“计算机信息网络直接进行国际联网，必须使用邮电部国家公用电信网提供的国际出入口信道。任何单位和个人不得自行建立或者使用其他信道进行国际联网。”Nginx 本地代理使用的是“公用电信网提供的国际出入口信道”，从日本 Pixiv 服务器到国内用户电脑/代理服务器的流量，使用的是正常流量通道，其间未对流量进行任何额外加密（仅有网页原有的 SSL 加密，用户和代理人并不掌握该 SSL 密钥，区别于 VPN 的流量加密），而 Nginx 获取到网页数据之后发生的整个代理过程完全在国内，不再适用国际互联网相关之规定。</p>
-<hr>
-<h4 id="协议-License-：署名-非商业性使用-相同方式共享-4-0-国际-CC-BY-NC-SA-4-0"><a href="#协议-License-：署名-非商业性使用-相同方式共享-4-0-国际-CC-BY-NC-SA-4-0" class="headerlink" title="协议(License)：署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0)"></a>协议(License)：署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0)</h4><h4 id="原作者-Author-：Mashiro"><a href="#原作者-Author-：Mashiro" class="headerlink" title="原作者(Author)：Mashiro"></a>原作者(Author)：Mashiro</h4><h4 id="原链接-URL-：https-2heng-xin-2017-09-19-pixiv"><a href="#原链接-URL-：https-2heng-xin-2017-09-19-pixiv" class="headerlink" title="原链接(URL)：https://2heng.xin/2017/09/19/pixiv/"></a>原链接(URL)：<a target="_blank" rel="noopener" href="https://2heng.xin/2017/09/19/pixiv/">https://2heng.xin/2017/09/19/pixiv/</a></h4><h4 id="原来源-Source-：樱花庄的白猫"><a href="#原来源-Source-：樱花庄的白猫" class="headerlink" title="原来源(Source)：樱花庄的白猫"></a>原来源(Source)：樱花庄的白猫</h4><h4 id="修改版本作者"><a href="#修改版本作者" class="headerlink" title="修改版本作者"></a><a target="_blank" rel="noopener" href="https://github.com/kagura114">修改版本作者</a></h4>
+            <h1 id="2020年明日方舟夏活炎上"><a href="#2020年明日方舟夏活炎上" class="headerlink" title="2020年明日方舟夏活炎上"></a>2020年明日方舟夏活炎上</h1><h2 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h2><h4 id="开始：一则公告"><a href="#开始：一则公告" class="headerlink" title="开始：一则公告"></a>开始：一则公告</h4><blockquote>
+<p>一、「火蓝之心」复刻，活动关卡限时开启<br>活动时间：08月11日16:00 - 8月25日03:59<br>活动说明：活动期间将开放「火蓝之心」活动关卡，玩家可通过活动关卡作战、完成活动里程碑以及活动商店获取相关活动奖励<br>解锁条件：通关主线1-10<br>活动关卡开放时间：<br>◆【主舞台】:08月11日16:00 - 8月21日03:59<br>◆【嘉年华】:08月11日16:00 - 8月21日03:59<br>◆【额外节目】:08月11日16:00 - 8月21日03:59<br>关卡消耗：<br>◆【主舞台】：消耗「理智」进入<br>◆【嘉年华】：消耗「黑曜石节门票」进入<br>◆【额外节目】：消耗「理智」进入<br>关卡主要掉落：<br>◆【主舞台】：「汐斯塔的黑曜石」、「黑曜石节门票」<br>◆【嘉年华】：「黑曜石节抽奖代币」<br>*首次通关活动关卡【OF-4】可获得活动干员【★★★★★：:锡兰】<br>复刻说明：<br><strong>◆本次复刻活动关卡将继承玩家此前的活动关卡进度及首次掉落进度</strong><br><strong>◆本次复刻活动中部分无法重复获得的活动奖励将在重复获得时按照对应比例兑换为【情报凭证】，    【情报凭证】兑换比例可参照活动中相应【情报凭证转换规则】</strong><br><strong>◆转换后的【情报凭证】可在凭证商店的【情报凭证区】进行兑换</strong><br>◆本次活动关卡开放期间【棘刺】、【安哲拉】 、【孑】、【黑】、【锡兰】、【格劳克斯】、【苏苏洛】信赖获取提升。</p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://ak.hypergryph.com/m/news/2020087812.html">原文地址</a>，此段内容解释权归上海硬件所有。</p>
+<p>首先老玩家的利益受损老，老玩家无法再次获得首次通关奖励，于是出现反对这次复刻保留进度的声音</p>
+<h4 id="发酵"><a href="#发酵" class="headerlink" title="发酵"></a>发酵</h4><p>这次老玩家的不满让他们想起了原来的诸多问题</p>
+<ul>
+<li>皮肤只有一张图片和小人动画，对不起价格</li>
+<li>一些男性干员没有剧情，一死空降骗氪</li>
+<li>新六星出的越来越快，8月有两个新6星池子<br>这些问题的再次翻出使矛盾激化，出现了联名停氪等</li>
+</ul>
+<h4 id="装死"><a href="#装死" class="headerlink" title="装死"></a>装死</h4><p>在<a target="_blank" rel="noopener" href="https://ak.hypergryph.com/m/news/2020087812.html">八月六日</a>到<a target="_blank" rel="noopener" href="https://ak.hypergryph.com/m/news/2020087445.html">八月八日</a>鹰角一直没有回复这次问题<br>期间大量护鹰角的和骂鹰角的在微博，nga，bilibili对线，但各个地方占上风的不同</p>
+<h4 id="道歉"><a href="#道歉" class="headerlink" title="道歉"></a>道歉</h4><p>在<a target="_blank" rel="noopener" href="https://ak.hypergryph.com/m/news/2020087445.html">第四次制作组通讯</a>中，鹰角道歉了<br>解决了其中最大的问题：池子出的太快，并对老玩家的补偿进行了说明</p>
+<h2 id="活动"><a href="#活动" class="headerlink" title="活动"></a>活动</h2><p>活动实际体力加倍，扭蛋都是垃圾，总而言之这个活动并不成功</p>
+<ul>
+<li>氪金点并不多，无法挽回鹰角流水总下降</li>
+<li>鹰角风评下降</li>
+<li>部分老玩家流失</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>这次事件必定可以和年限定池放下一起比较，这是鹰角运营的又一次失误</p>
+
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
-                <source type="audio/mpeg" src="https://music.163.com/song/media/outer/url?id=1449034817">
+                <source type="audio/mpeg" src="">
             </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title='0' data-url='http://link.hhtjim.com/163/425570952.mp3'></li>
+                        
+                    
+                        
+                            <li title='1' data-url='http://link.hhtjim.com/163/425570952.mp3'></li>
+                        
+                    
+                </ul>
             
         </div>
         
